@@ -44,14 +44,14 @@ Feel free to reach out to me! 😊 <br />
 
 ---
 
-###### 1. What's the output?
+###### 1. 以下代码会输出什么？
 
-```javascript
+```js
 function sayHi() {
   console.log(name);
   console.log(age);
-  var name = 'Lydia';
-  let age = 21;
+  var name = 'xgqfrms';
+  let age = 23;
 }
 
 sayHi();
@@ -61,6 +61,29 @@ sayHi();
 - B: `Lydia` and `ReferenceError`
 - C: `ReferenceError` and `21`
 - D: `undefined` and `ReferenceError`
+
+<details><summary><b>等价代码</b></summary>
+<p>
+
+#### 等价代码
+
+```js
+function sayHi() {
+  var name;
+  // var name = `undefined`;
+  console.log(name);
+  console.log(age);
+  name = `xgqfrms`;
+  let age = 23;
+}
+
+sayHi();
+```
+
+
+</p>
+</details>
+
 
 <details><summary><b>Answer</b></summary>
 <p>

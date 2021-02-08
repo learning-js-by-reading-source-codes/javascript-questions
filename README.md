@@ -1,7 +1,7 @@
 <div align="center">
-  <img height="60" src="https://img.icons8.com/color/344/javascript.png">
+  <img height="60" src="https://img.icons8.com/color/344/javascript.png" />
   <h1>JavaScript Questions</h1>
-<!-- </div> -->
+</div>
 
 ---
 
@@ -25,6 +25,7 @@ sayHi();
 
 <details><summary><b>等价代码</b></summary>
 <p>
+    
 ```js
 function sayHi() {
   var name;
@@ -43,7 +44,7 @@ sayHi();
 <details><summary><b>查看答案</b></summary>
 <p>
 
-> Answer: D
+<strong>Answer: D</strong>
 
 Within the function, we first declare the `name` variable with the `var` keyword. This means that the variable gets hoisted (memory space is set up during the creation phase) with the default value of `undefined`, until we actually get to the line where we define the variable. We haven't defined the variable yet on the line where we try to log the `name` variable, so it still holds the value of `undefined`.
 
@@ -1085,7 +1086,7 @@ Function constructors, like `new Number` and `new Boolean` are truthy.
 </p>
 </details>
 
----
+
 
 ###### 36. What's the output?
 
@@ -5071,3 +5072,5 @@ The condition within the `if` statement checks whether the value of `!typeof ran
 
 </p>
 </details>
+
+---

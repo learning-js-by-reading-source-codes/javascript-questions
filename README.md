@@ -5,7 +5,7 @@
 
 ---
 
-###### 1. 以下代码会输出什么？
+###### 1. 以下代码会输出什么？ ✅
 
 ```js
 function sayHi() {
@@ -55,9 +55,9 @@ Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, do
 
 ---
 
-###### 2. What's the output?
+###### 2. 以下代码会输出什么？ ✅
 
-```javascript
+```js
 for (var i = 0; i < 3; i++) {
   setTimeout(() => console.log(i), 1);
 }
@@ -71,10 +71,36 @@ for (let i = 0; i < 3; i++) {
 - B: `0 1 2` and `3 3 3`
 - C: `3 3 3` and `0 1 2`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>等价代码</b></summary>
+<p>
+    
+```js
+var i;
+for (i = 0; i < 3; i++) {
+  //
+}
+// i === 3
+setTimeout(() => console.log(i), 1);
+setTimeout(() => console.log(i), 1);
+setTimeout(() => console.log(i), 1);
+
+var i;
+for (i = 0; i < 3; i++) {
+  // closures 闭包
+  (function (i) {
+    // 0, 1, 2
+    setTimeout(() => console.log(i), 1);
+  })(i)
+}
+
+```
+</p>
+</details>
+
+<details><summary><b>查看答案</b></summary>
 <p>
 
-#### Answer: C
+<strong>Answer: C</strong>
 
 Because of the event queue in JavaScript, the `setTimeout` callback function is called _after_ the loop has been executed. Since the variable `i` in the first loop was declared using the `var` keyword, this value was global. During the loop, we incremented the value of `i` by `1` each time, using the unary operator `++`. By the time the `setTimeout` callback function was invoked, `i` was equal to `3` in the first example.
 

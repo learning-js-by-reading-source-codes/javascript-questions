@@ -18,8 +18,8 @@ function sayHi() {
 sayHi();
 ```
 
-- A: `Lydia` and `undefined`
-- B: `Lydia` and `ReferenceError`
+- A: `xgqfrms` and `undefined`
+- B: `xgqfrms` and `ReferenceError`
 - C: `ReferenceError` and `21`
 - D: `undefined` and `ReferenceError`
 
@@ -151,7 +151,7 @@ There is no value `radius` on that object, which returns `NaN`.
 
 ```javascript
 +true;
-!'Lydia';
+!'xgqfrms';
 ```
 
 - A: `1` and `false`
@@ -165,7 +165,7 @@ There is no value `radius` on that object, which returns `NaN`.
 
 The unary plus tries to convert an operand to a number. `true` is `1`, and `false` is `0`.
 
-The string `'Lydia'` is a truthy value. What we're actually asking, is "is this truthy value falsy?". This returns `false`.
+The string `'xgqfrms'` is a truthy value. What we're actually asking, is "is this truthy value falsy?". This returns `false`.
 
 </p>
 </details>
